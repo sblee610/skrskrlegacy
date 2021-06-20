@@ -1,0 +1,24 @@
+@font-face {font-family:"Arimo";
+  src:url("Arimo-Regular.ttf") format("truetype");
+  font-weight:normal;font-style:normal;}
+
+.fadePage {
+  -webkit-animation-name: fadePage;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fadePage;
+  animation-duration: 1.5s;
+}
+
+.active {
+  fill:blue;
+}
+
+@-webkit-keyframes fadePage {
+  from {opacity: .2}
+  to {opacity: 1}
+}
+
+@keyframes fadePage {
+  from {opacity: .2}
+  to {opacity: 1}
+}

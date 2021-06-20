@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Skr Skr</title>
+    <link href="animation.css" rel="stylesheet" type="text/css">
+    <style>
+      body {
+        font-family:'Arimo';
+        margin : 0;
+        overflow-style: none;
+      }
+
+      a { text-decoration: none; color: black; }
+      a:visited { text-decoration: none; }
+      a:hover { text-decoration: none; }
+      a:focus { text-decoration: none; }
+      a:hover, a:active { text-decoration: none; }
+
+      ::-webkit-scrollbar {
+        display:none;
+      }
+
+      #logo {
+        margin-top: 35px;
+        position:absolute;
+        left:5vw;
+        z-index:11;
+        height:80%;
+      }
+
+      .bar {
+       position : fixed;
+       width : 100%;
+       height : 78px;
+       z-index : 10;
+     }
+
+     .nav {
+       list-style-type :none;
+       padding : 0;
+       position : absolute;
+       z-index : 10;
+       top : 0;
+       right : 50px;
+       overflow : hidden;
+       margin : 40px 0 0 0;
+    }
+
+    li {
+      float : left;
+    }
+
+    li a {
+      display : block;
+      color : black;
+      text-align : center;
+      font-size : 1em;
+      padding : 10px;
+      text-decoration : none;
+    }
+
+    .con {
+      position : relative;
+      overflow : hidden;
+      width : 100vw;
+      height : 100vh;
+      scroll-snap-align : start;
+    }
+
+    #scrollicon {
+      position : absolute;
+      display : flex;
+      bottom : 35px;
+      height : 26px;
+      width : 70px;
+      margin-left:-35px;
+      font-size: 15px;
+      color:white;
+      border: 1.5px white solid;
+      left: 50%;
+      border-radius: 13px;
+      align-items:center;
+      justify-content:center;
+      text-decoration : none;
+    }
+
+    #scrollicon_b {
+      position : absolute;
+      display : flex;
+      bottom : 35px;
+      height : 26px;
+      width : 70px;
+      margin-left:-35px;
+      font-size: 15px;
+      color:black;
+      border: 1.5px black solid;
+      left: 50%;
+      border-radius: 13px;
+      align-items:center;
+      justify-content:center;
+      text-decoration : none;
+    }
+
+    .serviceProGrid {
+      position:absolute;
+      top:17vh; left:0; right:0; margin:auto;
+      width:90%; height:65vh;
+      display:grid; grid-template-columns: 1fr 4fr 4fr;
+      overflow:hidden;
+      font-size:1.6em;
+    }
+
+    .servicenumber {
+      display:grid; grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
+      text-decoration:none
+    }
+
+    .scrollcon {
+      scroll-snap-type: y mandatory;
+      overflow: auto;
+      width : 100vw;
+      height : 100vh;
+    }
+
+    .worklistContain {
+      display : grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      position:absolute;
+      bottom:10%; left:15vw; right:0; margin:auto;
+      max-height:80%; width:75%;
+      overflow : auto;
+      text-decoration: none;
+    }
+
+    .worklist {
+      width : 100%
+      height : 100%
+      overflow : hidden;
+    }
+
+    .worklist h2 {
+      font-size : 1.2em;
+      text-decoration:none;
+      font-weight : normal;
+      margin : 10px;
+      overflow: hidden;
+    }
+
+    .worklist h2:hover {
+      color : red;
+    }
+
+    .worklist h3 {
+      font-size : 1em;
+      text-decoration:none;
+      font-weight : normal;
+      margin : 10px;
+      overflow: hidden;
+    }
+
+    .worklist img {
+      max-width: 90%;
+      height : auto;
+      padding : 1% 5%;
+    }
+
+    #title {
+      text-orientation: mixed;
+      position : fixed;
+      font-size : 8em;
+      left : 5%;
+      bottom : 10%;
+    }
+
+    #title p {
+      writing-mode: vertical-rl ;
+      margin:0px;
+      color: #C5C5C5;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="bar fadePage">
+      <a class="scroll" href="index.html"><img src="LOGO_black.png" id="logo"></a>
+      <ul class="nav">
+        <li><a class="scroll" href="service.html">SERVICE</a></li>
+        <li><a class="scroll" href="works.html">WORKS</a></li>
+        <li><a class="scroll" href="clients.html">CLIENTS</a></li>
+        <li><a class="scroll" href="contact.html">CONTACT</a></li>
+        <li><a class="scroll" href="index.html">中</a></li>
+      </ul>
+    </div>
+      <div class="con fadePage" id="works">
+        <div class="worklistContain">
+          <a href="project_noisette.html"><div class="worklist">
+            <h2>Noisette</h2>
+            <h3>Web design</h3>
+            <img src="img/works_noisette.png">
+          </div></a>
+
+          <a href="project_givingtuesday.html"><div class="worklist">
+            <h2>Giving Tuesday</h2>
+            <h3>Film Production</h3>
+            <img src="img/works_giving.png">
+          </div></a>
+
+          <a href="project_mtachina.html"><div class="worklist">
+            <h2>MTA China</h2>
+            <h3>Advertising & Marketing</h3>
+            <img src="img/works_mtachina.png">
+          </div></a>
+
+          <a href="project_tedxyouth.html"><div class="worklist">
+            <h2>TEDxYouth@Seattle</h2>
+            <h3>Advertising & Marketing</h3>
+            <img src="img/works_tedx.png">
+          </div></a>
+
+          <a href="project_evergreen.html"><div class="worklist">
+            <h2>Evergreen State College</h2>
+            <h3>Film Production</h3>
+            <img src="img/works_evergreen.png">
+          </div></a>
+
+          <a href="project_impacthub.html"><div class="worklist">
+            <h2>Impact Hub Seattle</h2>
+            <h3>Advertising & Marketing</h3>
+            <img src="img/works_Impact.png">
+          </div></a>
+
+        </div>
+
+        <div id="title">
+          <p>works</p>
+        </div>
+        <a href="clients.html" id="scrollicon_b">SCROLL</a>
+      </div>
+
+  </body>
+</html>
